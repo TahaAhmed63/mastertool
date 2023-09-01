@@ -8,6 +8,11 @@ import { BackSide, Flippy, FrontSide } from "react-flippy";
 // import { SwiperSlide } from "swiper/react";
 // import {Swiper} from "swiper/react";
 const Nft = ({ nft, nfts }) => {
+  useEffect(() => { 
+ 
+    window.scrollTo(0,0)
+
+ }, []);
   const { cardData } = useSelector((state) => state.nfts);
   console.log(cardData, "->>>>>>>>>>>>>>>>>>>>>>>>>");
   const { id } = useParams();
@@ -146,11 +151,16 @@ const Nft = ({ nft, nfts }) => {
                     <Link>Cards</Link>
                   </Link>
                   <span className="separator">/</span>
-                  <span className="current">{nft && nft.title}</span>
+                  <span className="current" style={{
+
+                  }}>{nft && nft.title}</span>
                 </p>
               </div>
               <h3
                 className="fn__maintitle"
+                style={{
+                  textAlign:"center"
+                }}
                 data-text={selectedCard.name}
                 data-align="left"
               >
@@ -159,10 +169,11 @@ const Nft = ({ nft, nfts }) => {
               <div className="desc">
                 <h3
                   style={{
-                    fontSize: "16px",
-                    fontWeight: 400,
+                    fontSize: "26px",
+                    fontWeight: 300,
                     letterSpacing: ".05em",
                     lineHeight: 1.25,
+                    textAlign:"center",
 
                     width: "100%",
                   }}
@@ -171,10 +182,11 @@ const Nft = ({ nft, nfts }) => {
                 </h3>
                 <h3
                   style={{
-                    fontSize: "16px",
-                    fontWeight: 400,
+                    fontSize: "26px",
+                    fontWeight: 300,
                     letterSpacing: ".05em",
                     lineHeight: 1.25,
+                    textAlign:"center",
 
                     width: "100%",
                   }}
@@ -183,10 +195,11 @@ const Nft = ({ nft, nfts }) => {
                 </h3>
                 <h3
                   style={{
-                    fontSize: "16px",
-                    fontWeight: 400,
+                    fontSize: "26px",
+                    fontWeight: 300,
                     letterSpacing: ".05em",
                     lineHeight: 1.25,
+                    textAlign:"center",
 
                     width: "100%",
                   }}
@@ -195,10 +208,11 @@ const Nft = ({ nft, nfts }) => {
                 </h3>
                 <h3
                   style={{
-                    fontSize: "16px",
-                    fontWeight: 400,
+                    fontSize: "26px",
+                    fontWeight: 300,
                     letterSpacing: ".05em",
                     lineHeight: 1.25,
+                    textAlign:"center",
 
                     width: "100%",
                   }}
@@ -207,10 +221,11 @@ const Nft = ({ nft, nfts }) => {
                 </h3>
                 <h3
                   style={{
-                    fontSize: "16px",
-                    fontWeight: 400,
+                    fontSize: "26px",
+                    fontWeight: 300,
                     letterSpacing: ".05em",
                     lineHeight: 1.25,
+                    textAlign:"center",
 
                     width: "100%",
                   }}
@@ -219,10 +234,11 @@ const Nft = ({ nft, nfts }) => {
                 </h3>
                 <h3
                   style={{
-                    fontSize: "16px",
-                    fontWeight: 400,
+                    fontSize: "26px",
+                    fontWeight: 300,
                     letterSpacing: ".05em",
                     lineHeight: 1.25,
+                    textAlign:"center",
 
                     width: "100%",
                   }}
@@ -250,11 +266,14 @@ const Nft = ({ nft, nfts }) => {
               </div>
 
               <div className="view_on">
-                <ul>
-                  <li>
-                    <span>Tags:</span>
-                  </li>
-                </ul>
+           
+                    <h3 style={{
+                      textAlign:"center"
+                    }}>Tags:</h3>
+                
+              
+                 
+                
                 <div
                   className="tag"
                   style={{
@@ -262,6 +281,7 @@ const Nft = ({ nft, nfts }) => {
                     gap: "10px",
                     display: "flex",
                     flexWrap: "wrap",
+                    justifyContent:"center"
                   }}
                 >
                   {selectedCard?.card_tag.map((e, i) => (
@@ -715,8 +735,8 @@ const Nft = ({ nft, nfts }) => {
                                   borderRadius: "10px",
                                 }}
                                 alt="thumbnail"
-                                width="100"
-                                heighth="100"
+                                width="150"
+                                heighth="150"
                               />
                             </div>
                           </li>

@@ -147,6 +147,13 @@ const Navigation = ({ navigation, navigationToggle }) => {
                  </Link>
                 </Link>
               </li> */}
+                  <li>
+                <Link href="/about">
+                <Link onClick={() => navigationToggle(false)}>
+                    <span className="creative_link">About</span>
+                 </Link>
+                </Link>
+              </li>
               <li>
                 <Link href="/collection">
                 <Link onClick={() => navigationToggle(false)}>
@@ -154,6 +161,7 @@ const Navigation = ({ navigation, navigationToggle }) => {
                  </Link>
                 </Link>
               </li>
+          
               {/* <li>
               <Link
                   href="#"
@@ -243,9 +251,16 @@ const Navigation = ({ navigation, navigationToggle }) => {
                 </Link>
               </li> */}
               <li>
-                <Link href="/blog-single">
+                <Link href="/news">
                 <Link onClick={() => navigationToggle(false)}>
-                    <span className="creative_link">Blog Single</span>
+                    <span className="creative_link">Blog</span>
+                 </Link>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact">
+                <Link onClick={() => navigationToggle(false)}>
+                    <span className="creative_link">contact</span>
                  </Link>
                 </Link>
               </li>

@@ -20,7 +20,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
             <div className="logo">
               <Link to="/">
                 <Link>
-                <Link className="creative_link">Master Tool</Link>
+                <Link  to="/" className="creative_link">Master Tool</Link>
                 </Link>
               </Link>
             </div>
@@ -29,27 +29,27 @@ const Header = ({ walletToggle, navigationToggle }) => {
             <ul>
               <li>
                 <Link to="/">
-                  <Link className="creative_link">Home</Link>
+                  <Link to="/" className="creative_link">Home</Link>
                 </Link>
               </li>
               <li>
-                <Link to="/about">
-                  <Link className="creative_link">About</Link>
+                <Link>
+                  <Link  to="/about" className="creative_link">About</Link>
                 </Link>
               </li>
               <li>
                 <Link to="/collection">
-                  <Link className="creative_link">Charecters</Link>
+                  <Link to="/collection" className="creative_link">Charecters</Link>
                 </Link>
               </li>
               <li>
                 <Link to="/news">
-                  <Link className="creative_link">Blog</Link>
+                  <Link to="/news" className="creative_link">Blog</Link>
                 </Link>
               </li>
               <li>
                 <Link to="/contact">
-                  <Link className="creative_link">Contact</Link>
+                  <Link  to="/contact" className="creative_link">Contact</Link>
                 </Link>
               </li>
             </ul>

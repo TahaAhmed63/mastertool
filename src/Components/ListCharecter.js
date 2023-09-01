@@ -10,7 +10,11 @@ const ListCharecter = ({ getCharecter, charData }) => {
   useEffect(() => {
     getCharecter();
   }, [getCharecter]);
+  useEffect(() => { 
+ 
+     window.scrollTo(0,0)
 
+  }, []);
   const isDataFetched = charData && charData.length > 0;
 
   return (

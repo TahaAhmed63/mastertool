@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { About2 } from '../Components/About'
 import SectionDivider from '../Components/SectionDivider'
 import Collection from '../Components/Collection'
@@ -11,6 +11,11 @@ import { hero6Slider } from '../sliderProps'
 import { Link } from 'react-router-dom'
 
 const AboutMain = () => {
+  useEffect(() => { 
+ 
+    window.scrollTo(0,0)
+
+ }, []);
   return (
     <Layout pageTitle={"Home #4"}>
    <section id="full_slider">

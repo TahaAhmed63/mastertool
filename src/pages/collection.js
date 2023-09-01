@@ -5,6 +5,11 @@ import Layout from "../layout/Layout";
 import PageBanner from "../layout/PageBanner";
 import { getNfts } from "../redux/actions/nfts";
 const CollectionDetail = ({ getNfts, cardData }) => {
+  useEffect(() => { 
+ 
+    window.scrollTo(0,0)
+
+ }, []);
   useEffect(() => {
     getNfts();
   }, [getNfts]);

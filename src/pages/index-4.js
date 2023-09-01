@@ -8,6 +8,7 @@ import SectionDivider from "../Components/SectionDivider";
 import WaterHero from "../Components/WaterHero";
 import Layout from "../layout/Layout";
 import AllCharecter from "../Components/allCharecter";
+import { useEffect } from "react";
 
 
 // const WaterHero = dynamic(() => import("../Components/WaterHero"), {
@@ -15,6 +16,11 @@ import AllCharecter from "../Components/allCharecter";
 // });
 
 const Index4 = () => {
+  useEffect(() => { 
+ 
+    window.scrollTo(0,0)
+
+ }, []);
   return (
     <Layout pageTitle={"Home #4"}>
       <WaterHero />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../layout/Layout'
 
 import Faq from '../Components/Faq'
@@ -7,6 +7,11 @@ import Collection from '../Components/Collection'
 import SectionDivider from '../Components/SectionDivider'
 import News from '../Components/News'
 const CharecterMain = () => {
+  useEffect(() => { 
+ 
+    window.scrollTo(0,0)
+
+ }, []);
   return (
     <Layout pageTitle={"Charecter"}>
   

@@ -609,7 +609,7 @@ a.full_link{
     color: var(--mc1);
     content: '';
     opacity: .15;
-    border-radius: 6px;
+    border-radius: 25px;
     box-shadow: 0px 5px 20px;
 }
 @keyframes animatedgradient {
@@ -6548,7 +6548,7 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     color: var(--mc1);
     content: '';
     opacity: .15;
-    border-radius: 6px;
+    border-radius: 25px;
     box-shadow: 0px 5px 20px;
 }
 .tags:after {

@@ -16,8 +16,17 @@ import AboutMain from './pages/AboutMain';
 import CharecterMain from './pages/CharecterMain';
 import AllCharecter from './Components/allCharecter';
 import ListCharecter from './Components/ListCharecter';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => { 
+    console.log("hell")
+ 
+ 
+      window.scrollTo(0,0)
+ 
+     window.history.scrollRestoration ="manual"
+  }, []);
   return (
 
     <BrowserRouter>       
