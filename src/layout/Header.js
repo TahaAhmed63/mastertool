@@ -19,9 +19,9 @@ const Header = ({ walletToggle, navigationToggle }) => {
             </div>
             <div className="logo">
               <Link to="/">
-                <a>
-                <a className="creative_link">Master Tool</a>
-                </a>
+                <Link>
+                <Link className="creative_link">Master Tool</Link>
+                </Link>
               </Link>
             </div>
           </div>
@@ -29,34 +29,34 @@ const Header = ({ walletToggle, navigationToggle }) => {
             <ul>
               <li>
                 <Link to="/">
-                  <a className="creative_link">Home</a>
+                  <Link className="creative_link">Home</Link>
                 </Link>
               </li>
               <li>
                 <Link to="/about">
-                  <a className="creative_link">About</a>
+                  <Link className="creative_link">About</Link>
                 </Link>
               </li>
               <li>
                 <Link to="/collection">
-                  <a className="creative_link">Charecters</a>
+                  <Link className="creative_link">Charecters</Link>
                 </Link>
               </li>
               <li>
                 <Link to="/news">
-                  <a className="creative_link">Blog</a>
+                  <Link className="creative_link">Blog</Link>
                 </Link>
               </li>
               <li>
                 <Link to="/contact">
-                  <a className="creative_link">Contact</a>
+                  <Link className="creative_link">Contact</Link>
                 </Link>
               </li>
             </ul>
           </div>
           {/* <div className="wallet">
-            <a
-              href="#"
+            <Link
+              to="#"
               // onClick={(e) => {
               //   e.preventDefault();
               //   walletToggle(true);
@@ -64,7 +64,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
               className="metaportal_fn_button wallet_opener"
             >
               <span>Download it</span>
-            </a>
+            </Link>
           </div> */}
         </div>
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React, { Fragment, useEffect, useState } from "react";
 import useClickOutside from "../../useClickOutside";
 
