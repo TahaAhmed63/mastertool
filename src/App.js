@@ -1,24 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index4 from './pages/index-4';
+// import { Provider } from "react-redux";
+// import store from "../src/redux/store";
+// import  About from './Components/About';
+// import Collection from './Components/Collection';
+import CollectionDetail from './pages/collection';
+import News from './Components/News';
+import Contact from './Components/Contact';
+import Header from './layout/Header';
+
+import NftSingle from './pages/nft-single';
+// import Charecter from './pages/Charecter';
+import AboutMain from './pages/AboutMain';
+import CharecterMain from './pages/CharecterMain';
+import AllCharecter from './Components/allCharecter';
+import ListCharecter from './Components/ListCharecter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>       
+< Header/>
+
+
+    <Routes>
+
+      <Route  path="/" element={<Index4 />}></Route>
+
+    
+      <Route  path="/about" element={<AboutMain/>}></Route>
+      <Route  path="/collection" element={<CharecterMain />}></Route>
+      <Route  path="/collection-detail" element={<CollectionDetail />}></Route>
+      <Route  path="/charector-detail" element={<ListCharecter />}></Route>
+
+      <Route  path="/Cards" element={<AllCharecter />}></Route>
+
+
+      <Route  path="/news" element={<News />}></Route>
+      <Route  path="/contact" element={<Contact />}></Route>
+      <Route path="/nft/:id" element={<NftSingle />} />
+
+
+
+
+
+      </Routes>
+ 
+
+      </BrowserRouter>
+ 
+  
   );
 }
 
