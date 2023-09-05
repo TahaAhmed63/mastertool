@@ -18,8 +18,8 @@ const CollectionDetail = ({ getNfts, cardData }) => {
   //   return type.split(" ").join("-");
   // };
   return (
-    <Layout pageTitle={"Charecters"}>
-      <PageBanner pageName={"Charecters"} />
+    <Layout pageTitle={"Cards"}>
+      <PageBanner pageName={"Cards"} />
 
       {/* Collection Page */}
       <div className="metaportal_fn_collectionpage">

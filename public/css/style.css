@@ -7114,3 +7114,29 @@ minuto 4 en el video
 		width: 100% !important ;
 	}
 }
+.metaportal_fn_nft_cats .mint_title span{
+	position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: .5px;
+    font-family: var(--hff);
+    background-color: #56b201;
+	
+    padding-right: 40px;
+    padding-left: 59px;
+    line-height: 48px;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+}
+.metaportal_fn_nft_cats  .mint_title span:before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 48px 0 0 20px;
+    border-color: transparent transparent transparent #56b201;
+}

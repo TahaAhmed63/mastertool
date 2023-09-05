@@ -69,15 +69,16 @@ const Navigation = ({ navigation, navigationToggle }) => {
                   // }}
                   // className={`${subMenu == "home" ? "active" : ""}`}
                 >
-                  <span className="creative_link">
-                    Home
-                    <img src="/svg/down.svg" alt="" className="fn__svg" />
-                  </span>
+                <Link to="/" onClick={() => navigationToggle(false)}>
+                    <span className="creative_link">Home</span>
+                 </Link>
+               
+               
                </Link>
                 {/* <ul className="sub-menu">
                   <li>
                   <Link
-                      href="#"
+                      to="#"
                       className="prev"
                       onClick={() => setSubMenu(null)}
                     >
@@ -89,14 +90,14 @@ const Navigation = ({ navigation, navigationToggle }) => {
                   </li>
 
                   <li>
-                    <Link href="/">
+                    <Link to="/">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">#1 3D Carousel</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/index-2">
+                    <Link to="/index-2">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">
                           #2 Bended Carousel
@@ -105,7 +106,7 @@ const Navigation = ({ navigation, navigationToggle }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/index-3">
+                    <Link to="/index-3">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">
                           #3 Video Background
@@ -114,14 +115,14 @@ const Navigation = ({ navigation, navigationToggle }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/index-4">
+                    <Link to="/index-4">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">#4 Water Effect</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/index-5">
+                    <Link to="/index-5">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">
                           #5 Simple Carousel
@@ -130,7 +131,7 @@ const Navigation = ({ navigation, navigationToggle }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/index-6">
+                    <Link to="/index-6">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">
                           #6 Fullscreen Slider
@@ -141,30 +142,37 @@ const Navigation = ({ navigation, navigationToggle }) => {
                 </ul> */}
               </li>
               {/* <li>
-                <Link href="/nft/1">
+                <Link to="/nft/1">
                 <Link onClick={() => navigationToggle(false)}>
                     <span className="creative_link">Mint Page</span>
                  </Link>
                 </Link>
               </li> */}
                   <li>
-                <Link href="/about">
-                <Link onClick={() => navigationToggle(false)}>
+                <Link to="/about">
+                <Link  to="/about" onClick={() => navigationToggle(false)}>
                     <span className="creative_link">About</span>
                  </Link>
                 </Link>
               </li>
               <li>
-                <Link href="/collection">
-                <Link onClick={() => navigationToggle(false)}>
+                <Link to="/collection">
+                <Link to="/collection" onClick={() => navigationToggle(false)}>
                     <span className="creative_link">Charecters</span>
+                 </Link>
+                </Link>
+              </li>
+              <li>
+                <Link to="/collection-detail">
+                <Link to="/collection-detail" onClick={() => navigationToggle(false)}>
+                    <span className="creative_link">Cards</span>
                  </Link>
                 </Link>
               </li>
           
               {/* <li>
               <Link
-                  href="#"
+                  to="#"
                   onClick={(e) => {
                     e.preventDefault();
                     setSubMenu("pages");
@@ -179,7 +187,7 @@ const Navigation = ({ navigation, navigationToggle }) => {
                 <ul className="sub-menu">
                   <li>
                   <Link
-                      href="#"
+                      to="#"
                       className="prev"
                       onClick={() => setSubMenu(null)}
                     >
@@ -191,49 +199,49 @@ const Navigation = ({ navigation, navigationToggle }) => {
                   </li>
 
                   <li>
-                    <Link href="/coming-soon">
+                    <Link to="/coming-soon">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">Coming Soon</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/404">
+                    <Link to="/404">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">404 Page</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/protected">
+                    <Link to="/protected">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">Protected Page</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/no-results">
+                    <Link to="/no-results">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">Search No Results</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/cookies">
+                    <Link to="/cookies">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">Cookies</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/policy">
+                    <Link to="/policy">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">Privacy Policy</span>
                      </Link>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/terms-conditions">
+                    <Link to="/terms-conditions">
                     <Link onClick={() => navigationToggle(false)}>
                         <span className="creative_link">
                           Terms &amp; Conditions
@@ -244,22 +252,22 @@ const Navigation = ({ navigation, navigationToggle }) => {
                 </ul>
               </li> */}
               {/* <li>
-                <Link href="/blog">
+                <Link to="/blog">
                 <Link onClick={() => navigationToggle(false)}>
                     <span className="creative_link">Blog</span>
                  </Link>
                 </Link>
               </li> */}
               <li>
-                <Link href="/news">
-                <Link onClick={() => navigationToggle(false)}>
+                <Link to="/news">
+                <Link to="/news" onClick={() => navigationToggle(false)}>
                     <span className="creative_link">Blog</span>
                  </Link>
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                <Link onClick={() => navigationToggle(false)}>
+                <Link to="/contact">
+                <Link to="/contact" onClick={() => navigationToggle(false)}>
                     <span className="creative_link">contact</span>
                  </Link>
                 </Link>
@@ -280,7 +288,7 @@ const Navigation = ({ navigation, navigationToggle }) => {
             <div className="social_icons">
               <ul>
                 <li>
-                <Link href="#">
+                <Link to="#">
                     <img
                       src="/svg/social/twitter-1.svg"
                       alt=""
@@ -289,7 +297,7 @@ const Navigation = ({ navigation, navigationToggle }) => {
                  </Link>
                 </li>
                 <li>
-                <Link href="#">
+                <Link to="#">
                     <img
                       src="/svg/social/facebook-1.svg"
                       alt=""
@@ -298,7 +306,7 @@ const Navigation = ({ navigation, navigationToggle }) => {
                  </Link>
                 </li>
                 <li>
-                <Link href="#">
+                <Link to="#">
                     <img
                       src="/svg/social/instagram-1.svg"
                       alt=""

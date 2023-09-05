@@ -647,7 +647,7 @@ const Nft = ({ nft, nfts }) => {
               )}
             </div>
           </div>
-
+      {/* -----------buddyyy------ */}
           {/* spellOne */}
 
           {selectedCard?.spell_one && (
@@ -1104,12 +1104,22 @@ const Nft = ({ nft, nfts }) => {
               </div>
             </div>
           )}
-
-          <div className="metaportal_fn_nft_cats">
-          <h4 style={{marginBottom:"2rem"}}>Stat Formula</h4>
+    {/* stateformulaa */}
+          <div className="metaportal_fn_nft_cats ">
        
+            <div className="mint_left">
+              <div className="mint_title">
+         <span style={{
+          marginBottom:"27px"
+         }}> Stat Formulas</span> 
+           
+            </div>
+    
+            </div>
 
              { selectedCard?.stat_formula?.map((e,i)=>(
+              <>
+              <h4 style={{marginBottom:"2rem"}}>Stat Formula {i+1}</h4>
                 <ul key={i}>
     <li >
     <div className="item">
@@ -1137,6 +1147,7 @@ const Nft = ({ nft, nfts }) => {
     </li>
  
   </ul>
+  </>
              ))
         }
 {/* 
@@ -1198,6 +1209,7 @@ const Nft = ({ nft, nfts }) => {
               </li> */}
        
           </div>
+           {/* stateformulaa */}
         </div>
       </div>
     </Layout>

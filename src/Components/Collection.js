@@ -58,6 +58,7 @@ const Collection = ({ getCharecter, charData }) => {
     {
       frontContent: (
         <div
+  
           style={{
             cursor: "pointer",
           }}
@@ -791,7 +792,9 @@ const Collection = ({ getCharecter, charData }) => {
                     style={{ width: "31.2%%", height: "31.2%%" }}
                     ref={(ref) => (flippyRefs.current[index] = ref)}
                   >
-                    <div className="item">
+                    <div className="item"       data-aos="flip-right"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
                       <div className="item_in">
                         <FrontSide onClick={() => handleCardToggle(index)}>
                           {card.frontContent}
@@ -814,7 +817,9 @@ const Collection = ({ getCharecter, charData }) => {
                     style={{ width: "31.2%%", height: "31.2%%" }}
                     ref={(ref) => (flippyRefs.current[index] = ref)}
                   >
-                    <div className="item">
+                    <div className="item" data-aos="flip-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
                       <div className="item_in">
                         <FrontSide onClick={() => handleCardToggle(index)}>
                           {card.frontContent}

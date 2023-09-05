@@ -15,7 +15,9 @@ const WaterHero = () => {
           <div className="fn_cs_hero_slider">
             <div className="bg_overlay" />
             <div className="left_part">
-              <h3 className="fn__maintitle big" data-text="Master Tool ">
+              <h3 className="fn__maintitle big" data-text="Master Tool "  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" >
             Master Tool
               </h3>
               <p>
@@ -37,7 +39,9 @@ const WaterHero = () => {
               <Swiper {...Hero4Slider} className="swiper-container">
                 <div className="swiper-wrapper">
                   <SwiperSlide className="swiper-slide">
-                    <div className="item">
+                    <div className="item"  data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                       <div className="img_holder">
                         <div
                           className="abs_img"
@@ -49,7 +53,9 @@ const WaterHero = () => {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
-                    <div className="item">
+                    <div className="item" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                       <div className="img_holder">
                         <div
                           className="abs_img"
@@ -61,7 +67,9 @@ const WaterHero = () => {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide className="swiper-slide">
-                    <div className="item">
+                    <div className="item" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                       <div className="img_holder">
                         <div
                           className="abs_img"

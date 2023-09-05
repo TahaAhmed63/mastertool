@@ -48,7 +48,9 @@ const Faq = () => {
               setActive(`${index + i}` === active ? null : `${index + i}`)
             }
           >
-            <h3 className="fn__maintitle" data-text={data.title}>
+            <h3 className="fn__maintitle" data-text={data.title} data-aos="fade-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500" >
               {data.title}
             </h3>
             <span className="icon">
@@ -81,7 +83,9 @@ const Faq = () => {
                 <span />
               </div>
             </div>
-            <div className="desc">
+            <div className="desc" data-aos="fade-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
               <p>
                 Pellentesque eu ex iaculis, tempus ex eu, consectetur lectus.
                 Aenean nec iaculis est, a mattis turpis. Morbi posuere lorem id
@@ -95,10 +99,14 @@ const Faq = () => {
               </p>
             </div>
           </div>
-          <div className="faq_col">
+          <div className="faq_col" data-aos="fade-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
             <div className="fn_cs_accordion">{faqMap(faqs1, "a")}</div>
           </div>
-          <div className="faq_col">
+          <div className="faq_col"data-aos="fade-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
             <div className="fn_cs_accordion">{faqMap(faqs2, "b")}</div>
           </div>
         </div>

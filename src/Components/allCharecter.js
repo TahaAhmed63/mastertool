@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { getNfts } from "../redux/actions/nfts";
 import { connect } from "react-redux";
+import Skeleton from 'react-loading-skeleton';
+
 const AllCharecter = ({ getNfts, cardData }) => {
 
 useEffect(()=>{
@@ -57,7 +59,7 @@ console.log(cardData)
             <div className="fn_cs_collection">
               <div className="collection_top card">
 
-              {cardData.slice(0, 6).map((card, index) => {
+              {/* {cardData.slice(0, 6).map((card, index) => {
   return (
     <div className="item charecter" key={index} style={{ width: "33% !important" }}>
       <Link to={`/nft/${card.id}`}>
@@ -71,7 +73,36 @@ console.log(cardData)
       <input type="hidden" defaultValue="img/collection/1.jpg" />
     </div>
   );
-})}
+})} */}
+ {cardData.length === 0 ? (
+              // Show skeleton loading animation while data is loading
+              <>
+                <Skeleton height={150} width={300} style={{ marginBottom: '1rem' }} />
+                <Skeleton height={150} width={300} style={{ marginBottom: '1rem' }} />
+                <Skeleton height={150} width={300} />
+                <Skeleton height={150} width={300} />
+                <Skeleton height={150} width={300} />
+                <Skeleton height={150} width={300} />
+   
+              </>
+            ) : (
+              // Render your data once it's loaded
+              cardData.slice(0, 6).map((card, index) => (
+                <div className="item charecter" key={index} style={{ width: '33% !important' }}  data-aos={index < 3 ? 'flip-left' : 'flip-right'}>
+                  <Link to={`/nft/${card.id}`}>
+                    <div className="item_in" style={{ cursor: 'pointer', position: 'relative' }}>
+                      <div className="img"  data-aos="flip-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500" style={{ cursor: 'pointer', position: 'relative' }}>
+                        <div className="abs_img" data-bg-img={card?.cg_thumbnail} style={{ cursor: 'pointer' }} />
+                        <img src="/img/1x1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </Link>
+                  <input type="hidden" defaultValue="img/collection/1.jpg" />
+                </div>
+              ))
+            )}
           
                 {/* <div className="item charecter">
                   <div className="item_in">

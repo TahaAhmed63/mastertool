@@ -17,8 +17,13 @@ import CharecterMain from './pages/CharecterMain';
 import AllCharecter from './Components/allCharecter';
 import ListCharecter from './Components/ListCharecter';
 import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
   useEffect(() => { 
     console.log("hell")
  
@@ -27,6 +32,7 @@ function App() {
  
      window.history.scrollRestoration ="manual"
   }, []);
+  
   return (
 
     <BrowserRouter>       

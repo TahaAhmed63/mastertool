@@ -249,7 +249,9 @@ export const About2 = () => (
   <section id="about2">
     <div className="container small">
       <div className="fn_cs_shortabout">
-        <div className="about_left">
+        <div className="about_left"data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
           <h3 className="fn__maintitle" data-text="The Rise of Legends">
             The Rise of Legends
           </h3>
@@ -279,12 +281,19 @@ export const About2 = () => (
             <span>About us</span>
           </Link>
         </div>
-        <div className="about_right">
+        <div className="about_right" data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
           <div className="abs_img" data-bg-img="/img/about/2.jpg" />
         </div>
       </div>
       <div className="fn_cs_collection_info">
-        <h3 className="fn__gradient_title">Master Tool About</h3>
+        <h3 className="fn__gradient_title"  data-aos="fade-down"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+ Master Tool <span data-aos="fade-down"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">About</span> </h3>
         <h3
           className="fn__maintitle upper"
           data-text="     Charecters We Have"
@@ -313,7 +322,9 @@ export const About2 = () => (
       <div className="fn_cs_steps gap" data-cols={4} data-gap={60}>
         <ul>
           <li>
-            <div className="item">
+            <div className="item" data-aos="fade-right"
+     data-aos-duration="1500"
+     data-aos-easing="linear">
               <div className="item_in">
                 <h3 className="fn__gradient_title">Lorem Ipsum ,</h3>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
@@ -321,7 +332,9 @@ export const About2 = () => (
             </div>
           </li>
           <li>
-            <div className="item">
+            <div className="item" data-aos="fade-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
               <div className="item_in">
                 <h3 className="fn__gradient_title">Lorem Ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
@@ -329,7 +342,9 @@ export const About2 = () => (
             </div>
           </li>
           <li>
-            <div className="item">
+            <div className="item" data-aos="fade-right"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
               <div className="item_in">
                 <h3 className="fn__gradient_title">Lorem Ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
@@ -337,7 +352,9 @@ export const About2 = () => (
             </div>
           </li>
           <li>
-            <div className="item">
+            <div className="item" data-aos="fade-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
               <div className="item_in">
                 <h3 className="fn__gradient_title">Lorem Ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed {`NFT’s`}</p>
@@ -347,7 +364,9 @@ export const About2 = () => (
         </ul>
       </div>
       {/* !Steps Shortcode */}
-      <div className="fn_cs_join">
+      <div className="fn_cs_join" data-aos="flip-left"
+       data-aos-easing="linear"
+       data-aos-duration="1500">
         <div className="join_in">
           <h3 className="fn__maintitle upper" data-text="Join Our Community">
             Join Our Community
